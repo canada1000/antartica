@@ -42,6 +42,10 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 .content a:hover { color: #2f81f7; background-color: transparent; text-decoration: underline; }
 .content a:visited { color: #2f81f7; background-color: transparent;  text-decoration: none; }
 .content a:active { color: #2f81f7; background-color: transparent;  text-decoration: none; }
+.modal a:link {  color: #2f81f7; background-color: transparent;  text-decoration: none; }  
+.modal a:hover { color: #2f81f7; background-color: transparent; text-decoration: underline; }
+.modal a:visited { color: #2f81f7; background-color: transparent;  text-decoration: none; }
+.modal a:active { color: #2f81f7; background-color: transparent;  text-decoration: none; }
 .social a:link { font-size:30px; color:white;}
 .social a:hover { color:#1d9bf0;}
 #myInput {  width: 100%;  padding: 10px;  margin-bottom: 20px;  border-radius: 15px; background-color:black; color:white;  border: 2px solid white;  font-size: 13px; }
@@ -324,18 +328,18 @@ cursor: pointer;
 	<h1 class="text-center" title="Cookies On Antartica.Org">Cookies On Antartica.Org</h1>
 	<p title="This website uses cookies.">This website uses cookies.</p>
 	<p title="Essential and functional cookies are necessary for the proper functioning of the website and cannot be refused.">Essential and functional cookies are necessary for the proper functioning of the website and cannot be refused.</p>
+<br>
  	<h2 title="Cookie Settings">Cookie settings</h2>
- 	<h3 title="Cookies that measure website use">Cookies that measure website use</h3>
- 	<p title="We use Google Analytics cookies to measure how you use Antartica.Org.">We use Google Analytics cookies to measure how you use Antartica.Org.</p>
-	<p title="These cookies collect information about: ">These cookies collect information about: </p>
-	<p title="How you got to these sites, The pages you visit and how long you spend on each page, What you click on while you're visiting these sites">
-	- how you got to these sites<br>
-	- the pages you visit and how long you spend on each page<br>
-	- what you click on while you're visiting these sites<br>
-	</p>
 	<h3 title="Strictly necessary cookies">Strictly necessary cookies</h3>
 	<p title="These essential cookies do things like remember your progress through the website.">These essential cookies do things like remember your progress through the website.</p>
 	<p title="They always need to be on.">They always need to be on.</p>
+<br>
+    <h3 title ="Strictly necessary cookies we use:">Strictly necessary cookies we use:</h3>
+    <p title="(1. googtrans) - (Type: Session Cookie) - (Use: To know your preferred language)"><b>1. [googtrans]</b><br>Type: Session Cookie<br>Use: To Know you language preferred language</p>
+    <p title="(2. [ae] [cookieconsent] ) (Type: Normal Cookie) (Use: To know your cookie consent status.)"><b>2. [ae] [cookieconsent]</b><br>Type: Normal Cookie<br>Use: To know your cookie consent status.</p>
+<br>
+<h3 title="Additional cookies we use:">Additional cookies we use:</h3>
+<p title="We currently do not use any additional cookies.">We currently do not use any additional cookies.</p>
 	<br><br>
 </div>
 	<div class="close" onclick="closemodal2();" title="Close This Tab (X)">Close This Tab (X)</div><br>
@@ -352,9 +356,15 @@ cursor: pointer;
 	<div class="text-center">
  		<h1 title="About">About</h1>
 	</div>
-  <div class="text-left">
+  <div class="text-center">
     <p>Antartica.Org/About</p>
-	</div>
+</div>
+
+<div class="text-center">
+<br><br>
+	<a href="javascript:void(0);" onclick="showmodal6()" title="Terms">Terms</a>&#8195;
+	<a href="javascript:void(0);" onclick="showmodal7()" title="Privacy">Privacy</a>
+</div>
   </div>
 
 </div>
@@ -425,6 +435,11 @@ cursor: pointer;
  	<h2 title="Change Language">Change Language</h2>
  	<div id="google_translate_element" title="Change Language"></div>
     </div>
+<div class="text-left">
+<br><br><br>
+	<a href="javascript:void(0);" onclick="transitshowmodal6()" title="Terms">Terms</a>&#8195;
+	<a href="javascript:void(0);" onclick="transitshowmodal7()" title="Privacy">Privacy</a>
+</div>
   </div>
 
 </div>
@@ -475,7 +490,7 @@ cursor: pointer;
 <div class="topnav" id="myTopnav">
 	<a href="javascript:void(0);" id="top-nav-small" title="Open Menu" onclick="sidebarFunction()"><i class="fa fa-bars"></i></a>
 	<a href="javascript:void(0);" id="top-nav-small-side" title="Close Menu" onclick="sidebarcloseFunction()"><i class="fa fa-bars"></i></a>
-	<a href="javascript:void(0);" id="title" title="Antartica.Org" onclick="gotopFunction()" translate="no">Antartica.Org</a>
+	<a href="javascript:void(0);" id="title" title="Antartica.Org" onclick="aesidebarcloseFunction()" translate="no">Antartica.Org</a>
 	<a href="javascript:void(0)" id="topnav-right2" title="Languages" onclick="showmodal8()"><i class="fa fa-language"></i></a>
 	<a href="javascript:void(0)" id="topnav-right3" title="Search" onclick="sidebarFunction()"><i class="fa fa-search"></i></a>
 </div>
@@ -524,7 +539,7 @@ cursor: pointer;
 
 <p id="copyright" title="Copyright © Antartica.Org" style="cursor: default;"></p>
 
-<p class="social"><a href="https://www.google.com/search?q=antarctica" target="_about" title="Google (Opens an External Website - google.com)"><i class="fa fa-google"></i></a>&#8195;<a href="https://en.wikipedia.org/wiki/Antarctica" title="Wikipedia (Opens an External Website - wikipedia.org)" target="_about"><i class="fa fa-wikipedia-w"></i></a>&#8195;<a href="https://www.youtube.com/results?search_query=antartica" target="_about" title="Youtube (Opens an External Website - youtube.com)"><i class="fa fa-youtube"></i></a>&#8195;<a href="https://www.reddit.com/search/?q=antartica" target="_about" title="Reddit (Opens an External Website - reddit.com)"><i class="fa fa-reddit"></i></a>&#8195;<a href="javascript:void(0);" title="Info"><i class="fa fa-info-circle"></i></a>&#8195;<a href="javascript:void(0);" title="Share" onclick="showmodal9()"><i class="fa fa-share-alt"></i></a></p>
+<p class="social"><a href="https://www.google.com/search?q=antarctica" target="_about" title="Google (Opens an External Website - google.com)"><i class="fa fa-google"></i></a>&#8195;<a href="https://en.wikipedia.org/wiki/Antarctica" title="Wikipedia (Opens an External Website - wikipedia.org)" target="_about"><i class="fa fa-wikipedia-w"></i></a>&#8195;<a href="https://www.youtube.com/results?search_query=antartica" target="_about" title="Youtube (Opens an External Website - youtube.com)"><i class="fa fa-youtube"></i></a>&#8195;<a href="https://www.reddit.com/search/?q=antartica" target="_about" title="Reddit (Opens an External Website - reddit.com)"><i class="fa fa-reddit"></i></a>&#8195;<a href="javascript:void(0);" title="Info" onclick="showmodal3()"><i class="fa fa-info-circle"></i></a>&#8195;<a href="javascript:void(0);" title="Share" onclick="showmodal9()"><i class="fa fa-share-alt"></i></a></p>
 </div>
 
 
@@ -609,16 +624,6 @@ console.info("Your cookie preferences have been saved. To change your preference
 
 
 function timeanddateFunction() {
-let userlanguage = getCookie("userlanguage");
-if (userlanguage == "en") {
-}
-else if (userlanguage == "en-US") {
-}
-else if (userlanguage == "0") {
-}
-else {
-setCookie("userlanguage", "0", 30);
-}
 
 const d = new Date();
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -648,12 +653,14 @@ document.getElementById("content").style.display = 'block';
 document.getElementById("top-nav-small").style.display = 'block';
 }
 
+function aesidebarcloseFunction() {
+document.getElementById("top-nav-small-side").style.display = 'none';
+document.getElementById("sidebar").style.display = 'none';
+document.getElementById("content").style.display = 'block';
+document.getElementById("top-nav-small").style.display = 'block';
+}
 
 function searchFunction() {    var input, filter, ul, li, a, i, txtValue;    input = document.getElementById("myInput");    filter = input.value.toUpperCase();    ul = document.getElementById("myUL");    li = ul.getElementsByTagName("li");    for (i = 0; i < li.length; i++) {        a = li[i].getElementsByTagName("a")[0];        txtValue = a.textContent || a.innerText;        if (txtValue.toUpperCase().indexOf(filter) > -1) {           li[i].style.display = "";        } else {            li[i].style.display = "none";        }    } }
-
-function gotopFunction() {
-window.scrollTo({ top: 0, behavior: 'smooth'});
-}
 </script>
 
   <script>
@@ -799,6 +806,24 @@ function showmodal9() {
 // When the user clicks on <span> (x), close the modal
 function closemodal9() {
   modal9.style.display = "none";
+}
+</script>
+
+<script>
+function transitshowmodal6() {
+var modal8 = document.getElementById("myModal8");
+var modal6 = document.getElementById("myModal6");
+  modal8.style.display = "none";
+  modal6.style.display = "block";
+}
+</script>
+
+<script>
+function transitshowmodal7() {
+var modal8 = document.getElementById("myModal8");
+var modal7 = document.getElementById("myModal7");
+  modal8.style.display = "none";
+  modal7.style.display = "block";
 }
 </script>
 <!-- script ends -->
