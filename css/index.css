@@ -1,13 +1,14 @@
 .navbar {  overflow: hidden;  background-color: #000000;    bottom: 0;  position:fixed;  width: 100%; display:none; border-top: 3px solid #1e2329; }
-.navbar a {  float: left;  display: block;  color: #f2f2f2;  text-align: center;  width:33.3333333333333%; padding: 12px;  font-size: 18px;  text-decoration: none; }
+.navbar a {  float: left;  display: block;  color: #f2f2f2;  text-align: center;  width:33.3333333333333%; padding: 14px;  font-size: 18px;  text-decoration: none; }
 .navbar a:hover { background-color: #21262c;  color: white; }
 .navbar .icon {  display: none; }
-@media screen and (max-width: 600px) { .navbar a { padding: 12px;  font-size: 16px; } }
-@media screen and (max-width: 300px) { .navbar a { padding: 10px;  font-size: 14px; } }
+@media screen and (max-width: 600px) { .navbar a { padding: 14px;  font-size: 16px; } }
+@media screen and (max-width: 400px) { .navbar a { padding: 13px;  font-size: 16px; } }
+@media screen and (max-width: 300px) { .navbar a { padding: 12px;  font-size: 14px; } }
 @media screen and (max-width: 250px) { .navbar a { padding: 10px;  font-size: 14px; } }
-@media screen and (max-width: 220px) { .navbar a { padding: 8px;  font-size: 14px; } }
+@media screen and (max-width: 220px) { .navbar a { padding: 9px;  font-size: 14px; } }
 @media screen and (max-width: 200px) { .navbar a { padding: 8px;  font-size: 12px; } }
-@media screen and (max-width: 170px) { .navbar a { padding: 6px;  font-size: 8px; } }
+@media screen and (max-width: 160px) { .navbar a { padding: 6px;  font-size: 8px; } }
 
 #topaaee { background-color: white; color:black; }
 body {  margin: 0; font-family: Arial, sans-serif; background-color: black; color:white;}
@@ -19,8 +20,8 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 .grey1-container a:hover { color: #2f81f7; background-color: transparent; text-decoration: underline; }
 .grey1-container a:visited { color: #2f81f7; background-color: transparent;  text-decoration: none; }
 .grey1-container a:active { color: #2f81f7; background-color: transparent;  text-decoration: none; }
-.topnav { overflow: hidden;  background-color: black;  padding-left: 0%;  padding-right: 0%; padding-top:8px; padding-bottom:8px;   position: -webkit-sticky;  position: sticky; top:0; width: 100%; border-bottom: 3px solid #1e2329;}
-.topnav a {  float: left;  display: #424243;  color: white;  text-align: center;  padding: 12px;  text-decoration: none;  font-size: 16px; }
+.topnav { overflow: hidden;  background-color: black;  padding-left: 2%;  padding-right: 2%;   position: -webkit-sticky;  position: sticky; top:0; width: 100%; border-bottom: 3px solid #1e2329;}
+.topnav a {  float: left;  display: #424243;  color: white;  text-align: center;  padding: 16px;  text-decoration: none;  font-size: 16px; }
 .topnav a:hover {  background-color: #21262c;  color: white;}
 .content {  padding: 50px;  text-align: left; font-size: 16px;}
 .content a:link {  color: #2f81f7; background-color: transparent;  text-decoration: none; }  
@@ -67,26 +68,26 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 
 
 @media screen and (max-width: 3000px) {
-.topnav {  overflow: hidden; padding-top:10px; padding-bottom:10px; padding-left: 2%;  padding-right: 2%;}
+.topnav {  overflow: hidden;  padding-left: 2%;  padding-right: 2%;}
 .modal { padding-top: 0%; padding-bottom: 0%; left: 0; top: 0; width: 100%;  height: 100%; overflow: auto; }
 }
 
 
 @media screen and (max-width: 2000px) {
-.topnav {  overflow: hidden; padding-top:9px; padding-bottom:9px; padding-left: 2%;  padding-right: 2%;}
+.topnav {  overflow: hidden;  padding-left: 2%;  padding-right: 2%;}
 .modal { padding-top: 0%; padding-bottom: 0%; left: 0; top: 0; width: 100%;  height: 100%; overflow: auto; }
 }
 
 
 @media screen and (max-width: 1400px) {
-.topnav {  overflow: hidden; padding-top:8px; padding-bottom:8px; padding-left: 2%;  padding-right: 2%;}
+.topnav {  overflow: hidden;  padding-left: 2%;  padding-right: 2%;}
 .modal { padding-top: 0%; padding-bottom: 0%; left: 0; top: 0; width: 100%;  height: 100%; overflow: auto; }
 }
 
 
 @media screen and (max-width: 1200px) {
-.topnav {  overflow: hidden; padding-top:7px; padding-bottom:7px; padding-left: 2%;  padding-right: 2%;}
-.topnav a {  float: left;  padding: 12px;  font-size: 15px; }
+.topnav {  overflow: hidden; padding-left: 2%;  padding-right: 2%;}
+.topnav a {  float: left;  padding: 16px;  font-size: 15px; }
 .content {  padding: 45px; font-size: 15px; }
 .grey1-container {  padding: 30px;  font-size: 15px; }
 .social a:link { font-size:29px;}
@@ -102,9 +103,9 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 
 @media screen and (max-width: 1000px) {
 #topnav-right { display: none; }
-.topnav {  overflow: hidden; padding-top:5px; padding-bottom:5px; padding-left: 2%;  padding-right: 2%;}
+.topnav {  overflow: hidden; padding-left: 2%;  padding-right: 2%;}
 #top-nav-large { display: none; }
-.topnav a {  float: left;  padding: 12px;  font-size: 14px; }
+.topnav a {  float: left;  padding: 16px;  font-size: 14px; }
 .content { padding: 35px; font-size: 14px; }
 .grey1-container {  padding: 30px;  font-size: 14px; }
 .social a:link { font-size:28px;}
@@ -113,14 +114,14 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 }
 
 @media screen and (max-width: 900px) {
-.topnav {  overflow: hidden; padding-top:4px; padding-bottom:4px; padding-left: 2%;  padding-right: 2%;}
+.topnav {  overflow: hidden;  padding-left: 2%;  padding-right: 2%;}
 }
 
 @media screen and (max-width: 600px) {
 .topnav {  overflow: hidden; padding-left: 1%;  padding-right: 1%;}
 #top-nav-medium { display: none; }
 .cookieconsentbutton {font-size: 13px;}
-.topnav a {  float: left;  padding: 12px;  font-size: 14px; }
+.topnav a {  float: left;  padding: 15px;  font-size: 14px; }
 .content {  padding: 25px; font-size: 13px; }
 .grey1-container {  padding: 25px;  font-size: 13px; }
 .social a:link { font-size:26px;}
@@ -130,7 +131,7 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 
 
 @media screen and (max-width: 400px) {
-.topnav {padding-left: 1%;  padding-right: 1%; }
+.topnav {padding-left: 0%;  padding-right: 0%; }
 .content {  padding: 20px; font-size: 13px; }
 .grey1-container {  padding: 20px;  font-size: 13px; }
 .cookieconsentbutton { padding: 10px 15px;}
@@ -141,7 +142,7 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 @media screen and (max-width: 300px) {
 #topnav-right3 { display: none; }
 .topnav { padding-top:0px; padding-bottom:0px; padding-left: 0px;  padding-right: 0px; }
-.topnav a {  float: left;  padding: 10px;  font-size: 13px; }
+.topnav a {  float: left;  padding: 12px;  font-size: 13px; }
 .content {  padding: 15px; font-size: 12px; }
 .grey1-container {  padding: 15px;  font-size: 12px; }
 .social a:link { font-size:22px;}
@@ -183,14 +184,14 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 }
 
 @media screen and (max-width: 180px) {
-.topnav a {  float: left;  padding: 10px;  font-size: 12px; }
+.topnav a {  float: left;  padding: 9px;  font-size: 12px; }
 .content {  padding: 11px; font-size: 11px; }
 .grey1-container {  padding: 11px;  font-size: 11px; }
 .cookieconsentbutton { padding: 4px 4px; }
 }
 
 @media screen and (max-width: 150px) {
-.topnav a {  float: left; padding: 10px;  font-size: 10px; }
+.topnav a {  float: left; padding: 8px;  font-size: 10px; }
 .content {  padding: 10px; font-size: 10px; }
 .grey1-container {  padding: 10px;  font-size: 10px; }
 .cookieconsentbutton {  font-size: 8px; }
@@ -204,7 +205,7 @@ body {  margin: 0; font-family: Arial, sans-serif; background-color: black; colo
 
 @media screen and (max-width: 120px) {
 #title { display: none; }
-.topnav a {  float: left;  padding: 9px;  font-size: 9px; }
+.topnav a {  float: left;  padding: 8px;  font-size: 9px; }
 .content {  padding: 8px; font-size: 8px; }
 .grey1-container {  padding: 10px;  font-size: 10px; }
 .cookieconsentbutton {  font-size: 7px; }
